@@ -72,7 +72,6 @@ const Home = () => {
                                 <Card.Body>
                                     <Card.Title>{person.name}</Card.Title>
                                     <Card.Text>
-                                        {/* Agrega más detalles aquí */}
                                     </Card.Text>
                                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         <Link to={`/detail/${person.uid}`}>
@@ -95,7 +94,6 @@ const Home = () => {
                                 <Card.Body>
                                     <Card.Title>{planet.name}</Card.Title>
                                     <Card.Text>
-                                        {/* Agrega más detalles aquí */}
                                     </Card.Text>
                                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                                         <Link to={`/detail/${planet.uid}`}>
