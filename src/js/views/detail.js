@@ -10,7 +10,7 @@ const Detail = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch(`https://www.swapi.tech/api/people/${id}`); // Cambia 'people' por la entidad que necesites
+            const response = await fetch(`https://www.swapi.tech/api/people/${id}`);
             const data = await response.json();
             setDetail(data.result);
         };
@@ -27,7 +27,6 @@ const Detail = () => {
                         <Card.Title>{detail.properties.name}</Card.Title>
                         <Card.Subtitle>{detail.properties.species}</Card.Subtitle>
                         <Card.Text>
-                            {/* Renderiza la información de los detalles aquí */}
                             {detail.properties.roles && (
                                 <p><strong>Role:</strong> {detail.properties.roles.join(', ')}</p>
                             )}
